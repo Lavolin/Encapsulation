@@ -6,6 +6,8 @@ namespace PersonsInfo
 {
     public class Person
     {
+        private string firstName;
+
         public Person(string firstName, string lastName, int age, decimal salary)
         {
             FirstName = firstName;
@@ -14,7 +16,20 @@ namespace PersonsInfo
             Salary = salary;
         }
 
-        public string FirstName { get; private set; }
+        public string FirstName 
+        {   get
+            {
+                return this.firstName;
+            } 
+            private set
+            {
+                if (value.Lenght < 3)
+                {
+                    throw new ArgumentExeption("First name cannot contain fewer than 3 symbols!");
+                }
+                return this.firstName = value;
+            } 
+        }
         public string LastName { get; private set; }
         public int Age { get; private set; }
         public decimal Salary { get; private set; }
