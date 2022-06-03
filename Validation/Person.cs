@@ -7,6 +7,10 @@ namespace PersonsInfo
     public class Person
     {
         private string firstName;
+        private string lastName;
+        private int age;
+        private decimal salary;
+
 
         public Person(string firstName, string lastName, int age, decimal salary)
         {
@@ -30,9 +34,52 @@ namespace PersonsInfo
                 return this.firstName = value;
             } 
         }
-        public string LastName { get; private set; }
-        public int Age { get; private set; }
-        public decimal Salary { get; private set; }
+        public string LastName 
+        { 
+           get
+            {
+                return this.lastName;
+            } 
+            private set
+            {
+                if (value.Lenght < 3)
+                {
+                    throw new ArgumentExeption("Last name cannot contain fewer than 3 symbols!");
+                }
+                return this.lastName = value;
+            } 
+        }
+        public int Age
+        { 
+           get
+            {
+                return this.age;
+            } 
+            private set
+            {
+                if (value < 1)
+                {
+                    throw new ArgumentExeption("Age cannot be zero or a negative integer!");
+                }
+                return this.age = value;
+            } 
+        }
+
+        public decimal Salary 
+        { 
+           get
+            {
+                return this.salary;
+            } 
+            private set
+            {
+                if (value < 650)
+                {
+                    throw new ArgumentExeption("Salary cannot be less than 650 leva!");
+                }
+                return this.salary = value;
+            } 
+        }
 
 
         public override string ToString()
