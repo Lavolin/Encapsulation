@@ -31,7 +31,8 @@ namespace PersonsInfo
                 {
                     throw new ArgumentException("First name cannot contain fewer than 3 symbols!");
                 }
-                return this.firstName = value;
+
+                 this.firstName = value;
             } 
         }
         public string LastName 
@@ -44,9 +45,9 @@ namespace PersonsInfo
             {
                 if (value.Length < 3)
                 {
-                    throw new AggregateException("Last name cannot contain fewer than 3 symbols!");
+                    throw new ArgumentException("Last name cannot contain fewer than 3 symbols!");
                 }
-                return this.lastName = value;
+                this.lastName = value;
             } 
         }
         public int Age
@@ -59,9 +60,9 @@ namespace PersonsInfo
             {
                 if (value < 1)
                 {
-                    throw new ArgumentExeption("Age cannot be zero or a negative integer!");
+                    throw new ArgumentException("Age cannot be zero or a negative integer!");
                 }
-                return this.age = value;
+                this.age = value;
             } 
         }
 
@@ -75,9 +76,9 @@ namespace PersonsInfo
             {
                 if (value < 650)
                 {
-                    throw new ArgumentExeption("Salary cannot be less than 650 leva!");
+                    throw new ArgumentException("Salary cannot be less than 650 leva!");
                 }
-                return this.salary = value;
+                this.salary = value;
             } 
         }
 

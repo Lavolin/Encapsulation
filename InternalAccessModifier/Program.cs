@@ -8,7 +8,7 @@ namespace InternalAccessModifier
         {
             InternalAccessModifier.PublicClass publicClass = new PublicClass();
 
-            publicClass.
+            
         }
     }
 }

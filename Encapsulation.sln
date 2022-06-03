@@ -7,19 +7,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encapsulation", "Encapsulat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InheritanceOOP", "InheritanceOOP\InheritanceOOP.csproj", "{50AFC012-C991-4FEA-A0FD-921415F83F6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Person", "Person\Person.csproj", "{2085C9AE-E8CE-4186-8283-F32D01E9B47D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Person", "Person\Person.csproj", "{2085C9AE-E8CE-4186-8283-F32D01E9B47D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternalAccessModifier", "InternalAccessModifier\InternalAccessModifier.csproj", "{91939E37-5F51-4B31-A69C-2DB6D4567603}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InternalAccessModifier", "InternalAccessModifier\InternalAccessModifier.csproj", "{91939E37-5F51-4B31-A69C-2DB6D4567603}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternalTest", "InternalTest\InternalTest.csproj", "{EAC2B5F4-290C-4413-82D0-9A6FC9FFE644}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InternalTest", "InternalTest\InternalTest.csproj", "{EAC2B5F4-290C-4413-82D0-9A6FC9FFE644}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persons", "Persons\Persons.csproj", "{931C746A-4762-4722-A53C-62BA273BCF40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persons", "Persons\Persons.csproj", "{931C746A-4762-4722-A53C-62BA273BCF40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salary", "Salary\Salary.csproj", "{236E04FE-E3B3-443A-8D3E-A6AC8D4096BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Salary", "Salary\Salary.csproj", "{236E04FE-E3B3-443A-8D3E-A6AC8D4096BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validation", "Validation\Validation.csproj", "{B6406BF4-CEDB-473A-A1E2-BBED78AC95AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validation", "Validation\Validation.csproj", "{B6406BF4-CEDB-473A-A1E2-BBED78AC95AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Team", "Team\Team.csproj", "{D814B864-3565-4CE7-BF62-BE61FA78F7FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Team", "Team\Team.csproj", "{D814B864-3565-4CE7-BF62-BE61FA78F7FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutableAndImmutable", "MutableAndImmutable\MutableAndImmutable.csproj", "{3C3874E8-1D25-464E-A1E3-8BE9852C3ED4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{D814B864-3565-4CE7-BF62-BE61FA78F7FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D814B864-3565-4CE7-BF62-BE61FA78F7FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D814B864-3565-4CE7-BF62-BE61FA78F7FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C3874E8-1D25-464E-A1E3-8BE9852C3ED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C3874E8-1D25-464E-A1E3-8BE9852C3ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C3874E8-1D25-464E-A1E3-8BE9852C3ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C3874E8-1D25-464E-A1E3-8BE9852C3ED4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
