@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace PersonsInfo
 {
@@ -31,7 +30,7 @@ namespace PersonsInfo
                 {
                     throw new ArgumentException("First name cannot contain fewer than 3 symbols!");
                 }
-                return this.firstName = value;
+                this.firstName = value;
             } 
         }
         public string LastName 
@@ -46,7 +45,7 @@ namespace PersonsInfo
                 {
                     throw new AggregateException("Last name cannot contain fewer than 3 symbols!");
                 }
-                return this.lastName = value;
+                this.lastName = value;
             } 
         }
         public int Age
@@ -54,14 +53,14 @@ namespace PersonsInfo
            get
             {
                 return this.age;
-            } 
+            }  
             private set
             {
-                if (value < 1)
+                if (value <= 0)
                 {
-                    throw new ArgumentExeption("Age cannot be zero or a negative integer!");
+                    throw new ArgumentException("Age cannot be zero or a negative integer!");
                 }
-                return this.age = value;
+               this.age = value;
             } 
         }
 
@@ -75,9 +74,9 @@ namespace PersonsInfo
             {
                 if (value < 650)
                 {
-                    throw new ArgumentExeption("Salary cannot be less than 650 leva!");
+                    throw new ArgumentException("Salary cannot be less than 650 leva!");
                 }
-                return this.salary = value;
+                 this.salary = value;
             } 
         }
 
@@ -94,7 +93,7 @@ namespace PersonsInfo
                 percentage /= 2; 
             }
 
-            Salary += Salary * percentage / 100;
+            Salary = Salary + Salary * percentage / 100;
         }
     }
 }

@@ -29,7 +29,7 @@ namespace PersonsInfo
         {
             get
             {
-                return this.firstTeam.AsReadOnly();
+                return this.reserveTeam.AsReadOnly();
             }
         }
 
